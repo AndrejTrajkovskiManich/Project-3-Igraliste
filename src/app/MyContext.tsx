@@ -14,8 +14,13 @@ interface ComponentProps {
   
 }
 export const MyContextProvider: React.FC<ComponentProps> = ({ children }) => {
-  const storedValue: any = JSON.parse(localStorage.getItem("favorites") || "[]") || [];
-  const storedValueCart: any = JSON.parse(localStorage.getItem("cartItems") || "[]") || [];
+  let storedValue: any = [];
+  let storedValueCart: any = [];
+  
+  if (typeof window !== 'undefined') {
+     storedValue = JSON.parse(localStorage.getItem("favorites") || "[]") || [];
+     storedValueCart = JSON.parse(localStorage.getItem("cartItems") || "[]") || [];
+  }
 
   const [favorites, setFavorites] = useState<any[] | any>(storedValue);
   const [cartItem, setItems] = useState<any[] | any>(storedValueCart);
