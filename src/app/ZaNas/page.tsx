@@ -5,9 +5,9 @@ import Footer from "../components/Footer/Footer";
 import Image from "next/image";
 import "./za-nas.scss";
 import Link from "next/link";
-type Props = {};
 
-export default function page({}: Props) {
+
+export default function Page() {
   return (
     <div>
       <Header />

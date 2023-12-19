@@ -11,11 +11,11 @@ interface MyContextProps {
 const MyContext = createContext<MyContextProps | undefined>(undefined);
 interface ComponentProps {
   children: React.ReactNode;
+  
 }
-const storedValue: any = JSON.parse(localStorage.getItem("favorites") || "[]") || [];
-const storedValueCart: any = JSON.parse(localStorage.getItem("cartItems") || "[]") || [];
-
 export const MyContextProvider: React.FC<ComponentProps> = ({ children }) => {
+  const storedValue: any = JSON.parse(localStorage.getItem("favorites") || "[]") || [];
+  const storedValueCart: any = JSON.parse(localStorage.getItem("cartItems") || "[]") || [];
 
   const [favorites, setFavorites] = useState<any[] | any>(storedValue);
   const [cartItem, setItems] = useState<any[] | any>(storedValueCart);
