@@ -1,0 +1,115 @@
+.paths{
+  display: flex;
+  align-items: center;
+  
+  padding: 30px  100px ;
+  
+  @media (max-width: 600px) {
+    padding: 20px 50px ;
+  }
+  @media (max-width: 500px) {
+    padding: 20px 20px;
+  }
+  p{
+    color: black;
+  }
+  .path{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    &:not(:first-child){
+      margin-left: 10px;
+  
+    }
+    &:not(:last-child){
+      margin-right: 10px;
+  
+    }
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+  }}
+.ZaNas {
+  padding: 0px 100px 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 950px) {
+    padding: 0px 50px 50px;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 20px 50px 20px;
+  }
+  .headText {
+    display: flex;
+    margin-bottom: 30px;
+    h1 {
+      align-self: flex-end;
+      font-size: 60px;
+      font-weight: 200;
+
+      @media (max-width: 500px) {
+        font-size: 30px;
+      }
+    }
+    .Spark {
+      @media (max-width: 425px) {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+  .buttonZaNas {
+    display: flex;
+    border: 2px solid rgb(196, 190, 190);
+    border-radius: 10px;
+    background-color: rgb(255, 246, 246);
+    margin-bottom: 50px;
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+    a {
+      padding: 10px 20px;
+      text-align: center;
+    }
+    span {
+      border: 2px solid rgb(196, 190, 190);
+      height: 30px;
+      align-self: center;
+    }
+  }
+  .mainText {
+    display: flex;
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+    .zanasimgContainer {
+      width: 50%;
+      @media (max-width: 850px) {
+        width: 100%;
+      }
+    }
+    .textZaNas {
+      padding-left: 20px;
+      padding-top: 10px;
+      width: 50%;
+      @media (max-width: 850px) {
+        width: 100%;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 20px;
+        @media (max-width: 1100px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .zanasimg {
+      width: 100%;
+      @media (max-width: 1100px) {
+        height: 550px;
+      }
+    }
+  }
+}

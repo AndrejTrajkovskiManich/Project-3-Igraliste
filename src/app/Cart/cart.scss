@@ -1,0 +1,110 @@
+.container-favorites {
+    padding: 50px 100px;
+    @media (max-width: 850px) {
+      padding:50px 60px ;
+    }
+    @media (max-width: 500px) {
+      padding:50px 40px ;
+    }
+    .container-icons {
+      display: flex;
+      border-bottom: 2px solid gold;
+      width: fit-content;
+    }
+    .margin-right {
+      margin-right: 20px;
+    }
+    .flex-favorties {
+      display: flex;
+      padding-bottom: 10px;
+      .icon-favorites {
+        margin-right: 10px;
+      }
+    }
+    .favorite-products {
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .favorite-product {
+      width: 30%;
+      font-size: 20px;
+      margin: 20px  0px;
+      @media (max-width: 850px) {
+        width: 46%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+      .price-favorites{
+          font-weight: bold;
+      }
+      .favorite-img {
+        width: 100%;
+        margin-right: 20px;
+        height: 60vh;
+        @media (max-width: 1140px) {
+          height: 50vh;
+        }
+        @media (max-width: 940px) {
+          height: 45vh;
+        }
+        @media (max-width: 500px) {
+          height: 70vh;
+        }
+      }
+    }
+  }
+  
+  .blocks-product-info {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+    .boxes-column {
+      width: 50%;
+      @media (max-width: 850px) {
+        width: 100%;
+      }
+      .margin-bottom {
+        margin-bottom: 20px;
+        @media (max-width: 850px) {
+          margin-bottom: 0px;
+        }
+      }
+      .margin-right {
+        margin-right: 20px;
+        @media (max-width: 850px) {
+          margin-right: 0px;
+        }
+      }
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid rgb(196, 190, 190);
+        border-radius: 5px;
+        padding: 20px;
+        @media (max-width: 850px) {
+          margin-bottom: 20px;
+        }
+        .box {
+          display: flex;
+          align-items: center;
+          h2 {
+            margin-left: 20px;
+            @media (max-width: 1000px) {
+              font-size: 20px;
+            }
+          }
+        }
+        .box-icon {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }

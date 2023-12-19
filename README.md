@@ -1,1 +1,1 @@
-# Project-3-Igraliste
+# Andrej-Academy-Challenges

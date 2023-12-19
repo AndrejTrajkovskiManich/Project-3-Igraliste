@@ -1,0 +1,135 @@
+.paths{
+  display: flex;
+  align-items: center;
+  
+  padding: 30px  100px ;
+  
+  @media (max-width: 600px) {
+    padding: 20px 50px ;
+  }
+  @media (max-width: 500px) {
+    padding: 20px 20px;
+  }
+  p{
+    color: black;
+  }
+  .path{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    &:not(:first-child){
+      margin-left: 10px;
+  
+    }
+    &:not(:last-child){
+      margin-right: 10px;
+  
+    }
+    @media (max-width: 500px) {
+      font-size: 15px;
+    }
+  }}
+.kontaktmain {
+  padding: 0px 100px 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media (max-width: 1100px) {
+    padding: 0px 50px 50px;
+  }
+  @media (max-width: 425px) {
+    padding: 0px 30px 50px 30px;
+  }
+  .headText {
+    display: flex;
+    margin-bottom: 30px;
+    h1 {
+      align-self: flex-end;
+      font-size: 60px;
+      font-weight: 200;
+      @media (max-width: 1200px) {
+        font-size: 45px;
+      }
+      @media (max-width: 425px) {
+        font-size: 25px;
+      }
+    }
+    .Spark {
+      @media (max-width: 425px) {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+  a {
+    background: rgb(247, 220, 167);
+    background: linear-gradient(
+      111deg,
+      rgba(247, 220, 167, 1) 72%,
+      rgba(228, 196, 98, 1) 100%
+    );
+    border: 2px solid rgb(196, 190, 190);
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    text-decoration: none;
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
+  .mainContant {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+    .kontaktimgContainer {
+      width: 50%;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    .textcontainer {
+      padding: 10px 20px;
+      width: 50%;
+      text-align: center;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+      @media (max-width: 425px) {
+        padding: 10px 0px;
+      }
+      .h1-ZsDaNe {
+        @media (max-width: 1200px) {
+          font-size: 30px;
+        }
+        @media (max-width: 425px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 20px;
+        @media (max-width: 425px) {
+          font-size: 15px;
+        }
+      }
+      .grayText {
+        color: rgb(196, 190, 190);
+      }
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .kontaktimg {
+      width: 100%;
+      @media (max-width: 500px) {
+        height: 350px;
+      }
+    }
+  }
+}
