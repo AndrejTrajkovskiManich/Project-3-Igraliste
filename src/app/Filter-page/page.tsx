@@ -33,7 +33,7 @@ interface Filters {
 }
 
 const dummyProducts: Product[] = data.products;
-const ProductFilter: React.FC<{ products: Product[] }> = () => {
+const ProductFilter = () => {
   const [filters, setFilters] = useState<Filters>({
     colors: [],
     sizes: [],
